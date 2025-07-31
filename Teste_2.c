@@ -70,11 +70,11 @@
             /*Abaixo, uma mensagem de encerramento do programa*/
             /*Tentei para que ficasse mais amigavel ao Usuario*/
 
-         printf("=========================================================\n");
+         printf("=========================================================\n\n");
          printf("         Fim do Guia de cidades Turísticas               \n\n"); 
-         printf("=========================================================\n");
-         printf("         Desenvolvido por: Samuel :)                     \n");
-         printf("=========================================================\n");
+         printf("========================================================== \n");
+         printf("         Desenvolvido por: Samuel :)                       \n");
+         printf("========================================================== \n");
 
             /*"printf" é usado para imprimir mensagens na tela*/
             /*"scanf" é usado para ler a entrada do usuário*/
@@ -82,8 +82,9 @@
             /*"Estado", "Cidade", "Codigo", "Area", "Populacao", "PIB" e "Pontos" são variáveis que armazenam os dados informados pelo usuário*/
             /*"Area", "Populacao", "PIB" e "Pontos" são variáveis que armazenam os dados informados pelo usuário*/
             /*"Cidade", "Estado", "Codigo" são strings que armazenam os dados informados pelo usuário*/
-            
+
 
           /*"return 0 "Usei para garantir que ocorreu tudo OK */
          return 0;
+
     }
