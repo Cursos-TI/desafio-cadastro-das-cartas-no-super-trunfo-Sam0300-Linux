@@ -1,12 +1,12 @@
 #include <stdio.h>
-int main() {
-    char Estado[20] = "Ceara";
-    char Codigo[30]= "A1";
-    char Cidade[30] = "Aracatinga";
-    double Area = 1229194;
-    float Populacao = 75.113;
-    float PIB = 22.63756;
-    int Pontos = 21;
+    int main() {
+     char Estado[20];
+     char Codigo[30];
+     char Cidade[30];
+     double Area;
+     float Populacao;
+     float PIB;
+     int Pontos;
     
          printf("==========================================================\n");
          printf(" Bem-vindo ao Guia de cidades Turísticas do Brasil     \n");
@@ -19,9 +19,24 @@ int main() {
          /* O nome do Estado*/
          /*.2 depois do % limita a 2 casas decimais */
 
+         printf("\n Digite a sua Cidade: \n");
+         scanf("%19s", Cidade); /* O Codigo "A1 Corresponde a Cidade de Aracatinga (Ou deveria ser)*/
+
          printf("\n Digite seu Codigo: \n");
          scanf("%29s", Codigo);
-         /* O Codigo "A1 Corresponde a Cidade de Aracatinga (Ou deveria ser)*/
+
+         printf("\n Digite a Aréa Total da Cidade: \n");
+         scanf("%lf", &Area);
+
+         printf("\n Digite a População da Cidade: \n");
+         scanf("%f", &Populacao);
+         
+         printf("\n Digite o PIB da Cidade Escolhida: \n");
+         scanf("%f", &PIB);
+
+         printf("\n Digite a quantidade de Pontos Turisticos: \n");
+         scanf("%d", &Pontos);
+
          printf("\n==================================================\n");
          printf("Resumo dos dados informados:\n");
          printf("Cidade: %s\n", Cidade);
@@ -31,10 +46,11 @@ int main() {
          
           /*%d: Imprime um inteiro no formato decimal.
             %i: Equivalente a %d.
-            %f: Imprime um número de ponto flutuante no formato padrão.
+            %f: Imprime um número de ponto flutuante no formato padrão. ( %f para ler valores do tipo float )
             %e: Imprime um número de ponto flutuante na notação científica.
             %c: Imprime um único caractere.
             %s: Imprime uma cadeia (string) de caracteres.
+            %lf: é usado para ler valores do tipo double.
             */
 
          printf("A área total de %s é: %.2f km².\n", Cidade, Area);
@@ -54,13 +70,21 @@ int main() {
             /*Abaixo, uma mensagem de encerramento do programa*/
             /*Tentei para que ficasse mais amigavel ao Usuario*/
 
-         printf("=========================================================\n");
-         printf("         Fim do Guia de cidades Turísticas               \n"); 
-         printf("=========================================================\n");
-         printf("         Desenvolvido por: Samuel :)                     \n");
-         printf("=========================================================\n");
+         printf("=========================================================\n\n");
+         printf("         Fim do Guia de cidades Turísticas               \n\n"); 
+         printf("========================================================== \n");
+         printf("         Desenvolvido por: Samuel :)                       \n");
+         printf("========================================================== \n");
+
+            /*"printf" é usado para imprimir mensagens na tela*/
+            /*"scanf" é usado para ler a entrada do usuário*/
+            /*"scanf" lê a entrada do usuário e armazena nas variáveis correspondentes*/
+            /*"Estado", "Cidade", "Codigo", "Area", "Populacao", "PIB" e "Pontos" são variáveis que armazenam os dados informados pelo usuário*/
+            /*"Area", "Populacao", "PIB" e "Pontos" são variáveis que armazenam os dados informados pelo usuário*/
+            /*"Cidade", "Estado", "Codigo" são strings que armazenam os dados informados pelo usuário*/
 
 
-    return 0;
-    /*"return 0 "Usei para garantir que ocorreu tudo OK */
-}
+          /*"return 0 "Usei para garantir que ocorreu tudo OK */
+         return 0;
+
+    }
