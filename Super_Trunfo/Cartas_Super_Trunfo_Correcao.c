@@ -63,7 +63,7 @@
          Use dois para deixar uma linha em branco entre as mensagens.*/
          printf("===================================================\n\n");
          printf("=======================================================\n");
-         
+
          printf("\n Digite seu Estado: \n");
          scanf("%19s", Estado2);
          /* O nome do Estado*/
@@ -88,12 +88,13 @@
          printf("\n Digite a quantidade de Pontos Turisticos: \n");
          scanf("%d", &Pontos2);
 
-         printf("\n==================================================\n");
+         printf("\n=======================================================\n");
          printf("Resumo dos dados informados:\n");
          printf("Cidade: %s\n", Cidade2);
          printf("Estado: %s\n", Estado2);
          printf("Código: %s\n", Codigo2);
-         printf("===================================================\n\n");
+         printf("=======================================================\n\n"); 
+         printf("                       Olá Novamente ;)                  \n");
          printf("\n=======================================================\n");
          printf("        Obrigado por usar o nosso Guia!\n");
          printf("=========================================================\n");
@@ -105,12 +106,12 @@
          printf("%s tem aproximadamente %d pontos turísticos.\n", Cidade2, Pontos2);
             
 
-         printf("=========================================================\n");
+         printf("===========================================================\n");
          printf("=========================================================\n\n");
          printf("         Fim do Guia de cidades Turísticas               \n\n"); 
-         printf("=========================================================\n");
-         printf("         Desenvolvido por: Samuel :)                     \n");
-         printf("=========================================================\n");
+         printf("===========================================================\n");
+         printf("         Desenvolvido por: Samuel :)                       \n");
+         printf("===========================================================\n");
          printf("========================================================== \n");
          printf("         Desenvolvido por: Samuel :)                       \n");
          printf("========================================================== \n");
