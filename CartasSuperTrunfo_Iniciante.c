@@ -5,7 +5,8 @@ int main() {
       char Codigo[30], Codigo2[30];
       char Cidade[30], Cidade2[30];
       double Area1, Area2;
-      double PIB1, PIB2, PIBperCapita1, PIBperCapita2;
+      double PIB1, PIB2;
+      float PIBperCapita1, PIBperCapita2;
       unsigned long int Populacao1, Populacao2;
       int Pontos1, Pontos2;
       double Densidade1, Densidade2;
@@ -40,12 +41,13 @@ int main() {
     scanf("%d", &Pontos1);
 
     // Cálculos
+    Densidade1 = (float) Populacao1 / Area1; 
    Densidade1 = (double)Populacao1 / Area1;
-   PIBperCapita1 = (PIB1 * 1000000000) / Populacao1;
+   PIBperCapita1= (float) PIB2 / Populacao2; 
 
     // Resultados
     printf("A densidade populacional de %s é: %.4f hab/km².\n", Cidade, Densidade1);
-    printf("O PIB per Capita de %s é: R$ %.2lf por habitante.\n", Cidade, PIBperCapita1);
+    printf("PIB per Cacpta: %.2f mil reais\n", PIBperCapita1);
 
     printf("\n==================================================\n");
     printf("Resumo dos dados informados:\n");
@@ -105,7 +107,7 @@ int main() {
     printf("===========================================================\n\n");
 
     printf("         Fim do Guia de cidades Turísticas               \n");
-    printf("         Desenvolvido por: Samuel :)                     \n");
+    printf("                             \n");
     printf("============================================================\n");
 
     printf("Pressione Enter para sair...\n");
