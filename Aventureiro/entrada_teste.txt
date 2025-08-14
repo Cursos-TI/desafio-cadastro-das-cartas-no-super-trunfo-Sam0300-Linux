@@ -1,0 +1,12 @@
+SP
+SaoPaulo
+A01
+1521
+12000000
+500
+RJ
+RioDeJaneiro
+B01
+1200
+6500000
+300
