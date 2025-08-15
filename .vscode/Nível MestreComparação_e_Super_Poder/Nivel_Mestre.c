@@ -2,11 +2,17 @@
     int main() {
     char Estado[20], Codigo[30], Cidade[30], Estado2[20], Codigo2[30], Cidade2[30];
     double Area1, PIB1, Area2, PIB2;
-    float PIBperCapita1, PIBperCapita2;
-    int Populacao1, Populacao2;
-    double Densidade1, Densidade2;
+    float PIBperCapita1, PIBperCapita2, Densidade1, Densidade2;
+    unsigned long int Populacao1, Populacao2;
     int Pontos1, Pontos2;
 
+       ///Como usar:
+   //Digite os dados quando o programa solicitar
+   //Pressione Enter após cada entrada
+   //O programa calculará automaticamente:
+   //Densidade populacional
+   //PIB per capita
+   //Exibirá o resumo de cada cidade
     printf("==========================================================\n");
     printf(" Bem-vindo ao Guia de cidades Turísticas do Brasil     \n");
     printf("========================================================\n\n");
@@ -30,21 +36,20 @@
     printf("\n");
 
     printf("População: \n"); 
-    canf("%d", &Populacao1);
+    scanf("%d", &Populacao1);
     printf("\n");
 
     printf("\n Digite a quantidade de Pontos Turisticos: \n");
     scanf("%d", &Pontos1);
-   limparBuffer(); // Limpa buffer após pontos turísticos
+    printf("\n");
 
     printf("PIB (bilhões): \n"); 
     scanf("%lf", &PIB1);
-   limparBuffer(); // Limpa buffer após último scanf da primeira cidade
     printf("\n");
     printf("\n ================================================================= \n");
     // Cálculos Primeira cidade!
-    Densidade1 = (double)Populacao1 / Area1;
-    PIBperCapita1 = (double)PIB1 / Populacao1; 
+    Densidade1 = (float)Populacao1 / Area1;
+    PIBperCapita1 = (float)PIB1 / Populacao1; 
 
     
     printf("\n==================================================\n");
@@ -57,12 +62,12 @@
     printf("População: %d habitantes\n", Populacao1);
     printf("Densidade populacional: %.2f hab/km²\n", Densidade1);
     printf("PIB per Capita: R$ %.2lf por habitante\n", PIBperCapita1);
+    printf("%s Tem aproximadamente %d Pontos Turísticos.\n", Cidade, Pontos1);
 
     printf("===================================================\n\n");
     
     // Limpa o buffer e pausa antes de continuar para a segunda cidade
     printf("Pressione ENTER para continuar para a segunda cidade...\n");
-    limparBuffer();
     getchar(); // Espera o usuário pressionar ENTER
     
     printf("=======================================================\n");
@@ -89,6 +94,9 @@
     printf("População: \n"); 
     scanf("%d", &Populacao2);
     printf("\n");
+
+    printf("\n Digite a quantidade de Pontos Turisticos: \n");
+    scanf("%d", &Pontos1);
     
     printf("PIB (bilhões): \n"); 
     scanf("%lf", &PIB2);
@@ -109,6 +117,7 @@
     printf("População: %lu habitantes\n", Populacao2);
     printf("Densidade populacional: %.2f hab/km²\n", Densidade2);
     printf("PIB per Capita: R$ %.2lf por habitante\n", PIBperCapita2);
+    printf("%s Tem aproximadamente %d Pontos Turísticos.\n", Cidade2, Pontos2);
     printf("\n ================================================================= \n");
 
     return 0;
