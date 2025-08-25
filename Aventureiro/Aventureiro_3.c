@@ -96,7 +96,7 @@
     printf("\n");
 
     printf("\n Digite a quantidade de Pontos Turisticos: \n");
-    scanf("%d", &Pontos1);
+    scanf("%d", &Pontos2);
     
     printf("PIB (bilhões): \n"); 
     scanf("%lf", &PIB2);
@@ -114,7 +114,7 @@
     printf("Codigo: %s\n", Codigo2);
     printf("Área total: %.2f km²\n", Area2);
     printf("PIB: %.2lf Milhões de reais\n", PIB2);
-    printf("População: %lu habitantes\n", Populacao2);
+    printf("População: %d habitantes\n", Populacao2);
     printf("Densidade populacional: %.2f hab/km²\n", Densidade2);
     printf("PIB per Capita: R$ %.2lf por habitante\n", PIBperCapita2);
     printf("%s Tem aproximadamente %d Pontos Turísticos.\n", Cidade2, Pontos2);
